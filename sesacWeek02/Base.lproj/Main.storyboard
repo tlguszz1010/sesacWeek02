@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="olf-At-lkE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ueA-hB-scA">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -714,10 +714,10 @@
             </objects>
             <point key="canvasLocation" x="-1445" y="3027"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Segment View Controller-->
         <scene sceneID="tGg-lB-ATk">
             <objects>
-                <viewController id="ueA-hB-scA" customClass="secondViewController" customModule="sesacWeek02" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ueA-hB-scA" customClass="SegmentViewController" customModule="sesacWeek02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ibV-uK-60x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -779,9 +779,6 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="91.5" height="30"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Button"/>
-                                                        <connections>
-                                                            <action selector="buttonClicked:" destination="ueA-hB-scA" eventType="touchUpInside" id="8eF-hQ-Mxi"/>
-                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BR9-Y1-bmu">
                                                         <rect key="frame" x="0.0" y="97" width="91.5" height="20.5"/>
@@ -904,6 +901,26 @@
                                     <constraint firstAttribute="width" secondItem="sDC-Sr-ByW" secondAttribute="height" multiplier="1:1.2" id="fSw-B2-pSB"/>
                                 </constraints>
                             </stackView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vzl-z0-PsP">
+                                <rect key="frame" x="142" y="140" width="131" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title=""/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentControl:" destination="OfI-eQ-K2O" eventType="valueChanged" id="be2-9M-nnK"/>
+                                    <action selector="segmentControlValuedChanged:" destination="ueA-hB-scA" eventType="valueChanged" id="vFL-xI-YPB"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czh-e9-WL6">
+                                <rect key="frame" x="153" y="204" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Clz-Oz-Q5T"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -914,27 +931,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outletCollection property="buttonList" destination="794-BY-9xu" collectionClass="NSMutableArray" id="kk4-Ip-Apl"/>
-                        <outletCollection property="buttonList" destination="oSG-Zt-z4v" collectionClass="NSMutableArray" id="y6T-r2-5dd"/>
-                        <outletCollection property="buttonList" destination="kM7-aC-aUy" collectionClass="NSMutableArray" id="Ny7-HV-227"/>
-                        <outletCollection property="buttonList" destination="UBQ-bE-kzd" collectionClass="NSMutableArray" id="pKM-Sw-1J4"/>
-                        <outletCollection property="buttonList" destination="rVB-eO-Mfr" collectionClass="NSMutableArray" id="uNB-M6-IBr"/>
-                        <outletCollection property="buttonList" destination="N9O-qO-Q7N" collectionClass="NSMutableArray" id="e9n-VK-fj5"/>
-                        <outletCollection property="buttonList" destination="8xZ-BN-NSj" collectionClass="NSMutableArray" id="5dQ-Ta-kaK"/>
-                        <outletCollection property="buttonList" destination="t2Q-pp-WTR" collectionClass="NSMutableArray" id="SfF-SN-fAw"/>
-                        <outletCollection property="buttonList" destination="WLt-C8-StC" collectionClass="NSMutableArray" id="3Ec-Wu-W4j"/>
-                        <outletCollection property="labelList" destination="s00-WT-cXY" collectionClass="NSMutableArray" id="oSu-mJ-PUg"/>
-                        <outletCollection property="labelList" destination="3P7-yE-VN7" collectionClass="NSMutableArray" id="vGU-Mg-1sJ"/>
-                        <outletCollection property="labelList" destination="BR9-Y1-bmu" collectionClass="NSMutableArray" id="hJf-Da-svB"/>
-                        <outletCollection property="labelList" destination="j5h-VT-6gA" collectionClass="NSMutableArray" id="0bJ-9W-NA2"/>
-                        <outletCollection property="labelList" destination="b5D-vN-P7f" collectionClass="NSMutableArray" id="AwK-Yq-vgc"/>
-                        <outletCollection property="labelList" destination="wId-bm-tDc" collectionClass="NSMutableArray" id="a0b-Nn-Wf4"/>
-                        <outletCollection property="labelList" destination="W7t-Yw-uWH" collectionClass="NSMutableArray" id="zuH-3j-RvN"/>
-                        <outletCollection property="labelList" destination="OVS-cu-RMY" collectionClass="NSMutableArray" id="8ao-WB-94X"/>
-                        <outletCollection property="labelList" destination="Sem-on-gKF" collectionClass="NSMutableArray" id="0E7-zi-I0h"/>
+                        <outlet property="resultLabel" destination="Czh-e9-WL6" id="iG1-9N-uGc"/>
+                        <outlet property="segmentControl" destination="vzl-z0-PsP" id="hPD-eK-79v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ye-sD-6o6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="OfI-eQ-K2O" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-720.28985507246387" y="3120.5357142857142"/>
         </scene>

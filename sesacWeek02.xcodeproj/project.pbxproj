@@ -14,6 +14,7 @@
 		4E1B2487287BA3EB00B04F5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E1B2486287BA3EB00B04F5C /* Assets.xcassets */; };
 		4E1B248A287BA3EB00B04F5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E1B2488287BA3EB00B04F5C /* LaunchScreen.storyboard */; };
 		4E1B2494287C62D500B04F5C /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1B2493287C62D500B04F5C /* secondViewController.swift */; };
+		4E1B2496287D213500B04F5C /* SegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1B2495287D213500B04F5C /* SegmentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4E1B2489287BA3EB00B04F5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E1B248B287BA3EB00B04F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E1B2493287C62D500B04F5C /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
+		4E1B2495287D213500B04F5C /* SegmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				4E1B247D287BA3E800B04F5C /* AppDelegate.swift */,
 				4E1B247F287BA3E800B04F5C /* SceneDelegate.swift */,
 				4E1B2481287BA3E800B04F5C /* ViewController.swift */,
+				4E1B2495287D213500B04F5C /* SegmentViewController.swift */,
 				4E1B2483287BA3E800B04F5C /* Main.storyboard */,
 				4E1B2493287C62D500B04F5C /* secondViewController.swift */,
 				4E1B2486287BA3EB00B04F5C /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			files = (
 				4E1B2494287C62D500B04F5C /* secondViewController.swift in Sources */,
 				4E1B2482287BA3E800B04F5C /* ViewController.swift in Sources */,
+				4E1B2496287D213500B04F5C /* SegmentViewController.swift in Sources */,
 				4E1B247E287BA3E800B04F5C /* AppDelegate.swift in Sources */,
 				4E1B2480287BA3E800B04F5C /* SceneDelegate.swift in Sources */,
 			);

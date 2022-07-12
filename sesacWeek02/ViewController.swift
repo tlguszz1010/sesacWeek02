@@ -75,6 +75,10 @@ class ViewController: UIViewController {
         
         navigationBar.shadowImage = UIImage()
         
+        textLabel1.text = setUserNickname()
+        view.backgroundColor = example().0
+        button1.setImage(UIImage(named: example().2), for: .normal)
+        
         // 코드로 이미지 설정하기
         // let image = UIImage(named: "sesac_slime6")?.withRenderingMode(.alwaysOriginal)
         // button1.setImage(image, for: .normal)
@@ -82,6 +86,19 @@ class ViewController: UIViewController {
         // 애플 시스템 심볼 쓰고 싶을 때
         // let systemImage = UIImage(systemName: <#T##String#>)
         
+    }
+    
+    // 배경색, 레이블, 이미지
+    func example() -> (UIColor, String, String) {
+        let color: [UIColor] = [.yellow, .red, .blue]
+        let image: [String] = ["sesac_slime6", "sesac_slime7", "sesac_slime8", "sesac_slime5"]
+        return (color.randomElement()!, "고래밥", image.randomElement()!)
+    }
+    
+    func setUserNickname() -> String {
+        let nickName = ["고래밥", "칙촉", "격투가"]
+        let select = nickName.randomElement()!
+        return "저는 \(select)입니다"
     }
     
     @IBAction func button1Clicked(_ sender: UIButton) {
