@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ueA-hB-scA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="olf-At-lkE">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -483,7 +483,7 @@
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="button1Clicked:" destination="olf-At-lkE" eventType="touchUpInside" id="ZWn-Fy-Nht"/>
+                                                            <action selector="buttonClicked:" destination="olf-At-lkE" eventType="touchUpInside" id="amD-3V-Fb7"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="751" text="메롱이야" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZ9-gb-aGM">
@@ -497,12 +497,12 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="e6C-ui-pjM">
                                                 <rect key="frame" x="131" y="0.0" width="111" height="111"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAt-Fa-pRS">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAt-Fa-pRS">
                                                         <rect key="frame" x="0.0" y="0.0" width="111" height="90.5"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Button" image="sesac_slime2"/>
                                                         <connections>
-                                                            <action selector="button2Clicked:" destination="olf-At-lkE" eventType="touchUpInside" id="ZEY-WR-Y6i"/>
+                                                            <action selector="buttonClicked:" destination="olf-At-lkE" eventType="touchUpInside" id="oZu-Fs-ERo"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03p-fA-dD9">
@@ -516,12 +516,12 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cax-em-UXq">
                                                 <rect key="frame" x="262" y="0.0" width="111" height="111"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vi5-jM-FsY">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vi5-jM-FsY">
                                                         <rect key="frame" x="0.0" y="0.0" width="111" height="90.5"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Button" image="sesac_slime3"/>
                                                         <connections>
-                                                            <action selector="button3Clicked:" destination="olf-At-lkE" eventType="touchUpInside" id="pH8-Uo-FbA"/>
+                                                            <action selector="buttonClicked:" destination="olf-At-lkE" eventType="touchUpInside" id="OIE-1h-EgI"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDQ-oX-eMY">
@@ -540,12 +540,12 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zrb-Ao-VVg">
                                                 <rect key="frame" x="0.0" y="0.0" width="111" height="111"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dO-Nk-6QY">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dO-Nk-6QY">
                                                         <rect key="frame" x="0.0" y="0.0" width="111" height="90.5"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Button" image="sesac_slime4"/>
                                                         <connections>
-                                                            <action selector="button4Clicked:" destination="olf-At-lkE" eventType="touchUpInside" id="cNc-tv-ivi"/>
+                                                            <action selector="buttonClicked:" destination="olf-At-lkE" eventType="touchUpInside" id="fZQ-ah-WSK"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSo-pD-bwV">
@@ -559,12 +559,12 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OFd-QJ-sUq">
                                                 <rect key="frame" x="131" y="0.0" width="111" height="111"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOE-2R-h5J">
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOE-2R-h5J">
                                                         <rect key="frame" x="0.0" y="0.0" width="111" height="90.5"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Button" image="sesac_slime5"/>
                                                         <connections>
-                                                            <action selector="button5Clicked:" destination="olf-At-lkE" eventType="touchUpInside" id="g3X-MD-0xe"/>
+                                                            <action selector="buttonClicked:" destination="olf-At-lkE" eventType="touchUpInside" id="KgK-Lw-pKU"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6Y-xe-XZU">
@@ -578,12 +578,12 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ehN-Ws-YP9">
                                                 <rect key="frame" x="262" y="0.0" width="111" height="111"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFl-An-1Cf">
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFl-An-1Cf">
                                                         <rect key="frame" x="0.0" y="0.0" width="111" height="90.5"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Button" image="sesac_slime6"/>
                                                         <connections>
-                                                            <action selector="button6Clicked:" destination="olf-At-lkE" eventType="touchUpInside" id="lct-w2-rZg"/>
+                                                            <action selector="buttonClicked:" destination="olf-At-lkE" eventType="touchUpInside" id="A92-CP-gTK"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbH-cf-fFy">
@@ -602,12 +602,12 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="67s-wL-24P">
                                                 <rect key="frame" x="0.0" y="0.0" width="111" height="111"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUb-Zt-rlb">
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUb-Zt-rlb">
                                                         <rect key="frame" x="0.0" y="0.0" width="111" height="90.5"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Button" image="sesac_slime7"/>
                                                         <connections>
-                                                            <action selector="button7Clicked:" destination="olf-At-lkE" eventType="touchUpInside" id="PIc-Ev-GMW"/>
+                                                            <action selector="buttonClicked:" destination="olf-At-lkE" eventType="touchUpInside" id="9VQ-KO-kaI"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWj-7R-ZVK">
@@ -621,12 +621,12 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="A8C-2L-baX">
                                                 <rect key="frame" x="131" y="0.0" width="111" height="111"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJk-TR-zwR">
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJk-TR-zwR">
                                                         <rect key="frame" x="0.0" y="0.0" width="111" height="90.5"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Button" image="sesac_slime8"/>
                                                         <connections>
-                                                            <action selector="button8Clicked:" destination="olf-At-lkE" eventType="touchUpInside" id="EwH-6W-W3k"/>
+                                                            <action selector="buttonClicked:" destination="olf-At-lkE" eventType="touchUpInside" id="8n0-pR-eQW"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssH-Ul-mCq">
@@ -640,12 +640,12 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="diQ-8e-o8Q">
                                                 <rect key="frame" x="262" y="0.0" width="111" height="111"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RU5-ak-S49">
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RU5-ak-S49">
                                                         <rect key="frame" x="0.0" y="0.0" width="111" height="90.5"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Button" image="sesac_slime9"/>
                                                         <connections>
-                                                            <action selector="button9Clicked:" destination="olf-At-lkE" eventType="touchUpInside" id="czr-ZS-XeI"/>
+                                                            <action selector="buttonClicked:" destination="olf-At-lkE" eventType="touchUpInside" id="q1O-6c-teH"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyz-eG-VAe">
@@ -689,25 +689,25 @@
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="button1" destination="JPq-Gp-hy7" id="buG-ee-V7C"/>
-                        <outlet property="button2" destination="XAt-Fa-pRS" id="16x-dl-9bo"/>
-                        <outlet property="button3" destination="Vi5-jM-FsY" id="gb6-kT-AOp"/>
-                        <outlet property="button4" destination="2dO-Nk-6QY" id="RGG-8K-fhk"/>
-                        <outlet property="button5" destination="JOE-2R-h5J" id="3p2-Uf-Ru4"/>
-                        <outlet property="button6" destination="HFl-An-1Cf" id="Gh7-fk-3o1"/>
-                        <outlet property="button7" destination="DUb-Zt-rlb" id="Wi0-hG-tgd"/>
-                        <outlet property="button8" destination="OJk-TR-zwR" id="KXF-Xv-Ugj"/>
-                        <outlet property="button9" destination="RU5-ak-S49" id="Q7M-1K-Kx2"/>
                         <outlet property="navigationBar" destination="UkX-Of-EWW" id="eiu-q3-NO2"/>
-                        <outlet property="textLabel1" destination="DZ9-gb-aGM" id="2co-X9-A09"/>
-                        <outlet property="textLabel2" destination="03p-fA-dD9" id="s37-lM-MAv"/>
-                        <outlet property="textLabel3" destination="WDQ-oX-eMY" id="ZiS-HA-0o6"/>
-                        <outlet property="textLabel4" destination="TSo-pD-bwV" id="xl9-pd-0Kp"/>
-                        <outlet property="textLabel5" destination="A6Y-xe-XZU" id="64W-zZ-djB"/>
-                        <outlet property="textLabel6" destination="wbH-cf-fFy" id="Igc-8B-ODv"/>
-                        <outlet property="textLabel7" destination="gWj-7R-ZVK" id="dCT-kV-13l"/>
-                        <outlet property="textLabel8" destination="ssH-Ul-mCq" id="w3m-TH-EX9"/>
-                        <outlet property="textLabel9" destination="Lyz-eG-VAe" id="2dg-mZ-oey"/>
+                        <outletCollection property="buttonList" destination="JPq-Gp-hy7" collectionClass="NSMutableArray" id="okS-kz-dPN"/>
+                        <outletCollection property="buttonList" destination="XAt-Fa-pRS" collectionClass="NSMutableArray" id="tXT-Sf-lsr"/>
+                        <outletCollection property="buttonList" destination="Vi5-jM-FsY" collectionClass="NSMutableArray" id="MYB-KH-mqk"/>
+                        <outletCollection property="buttonList" destination="2dO-Nk-6QY" collectionClass="NSMutableArray" id="Szd-hI-8nd"/>
+                        <outletCollection property="buttonList" destination="JOE-2R-h5J" collectionClass="NSMutableArray" id="I05-kg-Pcj"/>
+                        <outletCollection property="buttonList" destination="HFl-An-1Cf" collectionClass="NSMutableArray" id="wGx-kQ-qgb"/>
+                        <outletCollection property="buttonList" destination="DUb-Zt-rlb" collectionClass="NSMutableArray" id="DpN-eS-862"/>
+                        <outletCollection property="buttonList" destination="OJk-TR-zwR" collectionClass="NSMutableArray" id="guM-Dj-PHq"/>
+                        <outletCollection property="buttonList" destination="RU5-ak-S49" collectionClass="NSMutableArray" id="u8N-6Y-ot9"/>
+                        <outletCollection property="labelList" destination="DZ9-gb-aGM" collectionClass="NSMutableArray" id="18h-rh-yGi"/>
+                        <outletCollection property="labelList" destination="03p-fA-dD9" collectionClass="NSMutableArray" id="QSS-S3-p0g"/>
+                        <outletCollection property="labelList" destination="WDQ-oX-eMY" collectionClass="NSMutableArray" id="vtT-nJ-YoV"/>
+                        <outletCollection property="labelList" destination="TSo-pD-bwV" collectionClass="NSMutableArray" id="Iw8-ff-1Vj"/>
+                        <outletCollection property="labelList" destination="A6Y-xe-XZU" collectionClass="NSMutableArray" id="5i3-hq-Hd4"/>
+                        <outletCollection property="labelList" destination="wbH-cf-fFy" collectionClass="NSMutableArray" id="Q1l-MR-Fnj"/>
+                        <outletCollection property="labelList" destination="gWj-7R-ZVK" collectionClass="NSMutableArray" id="qfT-ch-eEl"/>
+                        <outletCollection property="labelList" destination="ssH-Ul-mCq" collectionClass="NSMutableArray" id="Alq-Jt-dPn"/>
+                        <outletCollection property="labelList" destination="Lyz-eG-VAe" collectionClass="NSMutableArray" id="vWW-w2-XjU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XAf-ra-pzY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
