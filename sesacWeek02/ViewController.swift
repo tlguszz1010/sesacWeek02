@@ -74,19 +74,30 @@ class ViewController: UIViewController {
         textLabel9.textAlignment = .center
         
         navigationBar.shadowImage = UIImage()
+        
+        // 코드로 이미지 설정하기
+        // let image = UIImage(named: "sesac_slime6")?.withRenderingMode(.alwaysOriginal)
+        // button1.setImage(image, for: .normal)
+        
+        // 애플 시스템 심볼 쓰고 싶을 때
+        // let systemImage = UIImage(systemName: <#T##String#>)
+        
     }
     
     @IBAction func button1Clicked(_ sender: UIButton) {
         cnt1 += 1
         textLabel1.text = "행복해 \(cnt1)"
+        showAlertController()
     }
     @IBAction func button2Clicked(_ sender: UIButton) {
         cnt2 += 1
         textLabel2.text = "사랑해 \(cnt2)"
+        showAlertController()
     }
     @IBAction func button3Clicked(_ sender: UIButton) {
         cnt3 += 1
         textLabel3.text = "좋아해 \(cnt3)"
+        showAlertController()
     }
     @IBAction func button4Clicked(_ sender: UIButton) {
         cnt4 += 1
@@ -113,7 +124,26 @@ class ViewController: UIViewController {
         textLabel9.text = "궁금해 \(cnt9)"
     }
     
-    
+    func showAlertController() {
+        // 1. 흰색 바탕 만들기 : UIAlertController, 글씨 넣어주기
+        let alert = UIAlertController(title: nil, message: "여기는 메시지가 들어갑니다", preferredStyle: .actionSheet) // actionSheet일때는 보통 타이틀을 안쓴다
+        
+        
+        // 2. 버튼 만들어주기
+        let ok = UIAlertAction(title: "확인", style: .destructive, handler: nil)
+        let cancel = UIAlertAction(title: "취소버튼입니다.", style: .cancel, handler: nil)
+        let web = UIAlertAction(title: "새 창으로 열기", style: .default, handler: nil)
+        let copy = UIAlertAction(title: "복사하기", style: .default, handler: nil)
+        
+        // 3. 버튼을 하나로 합쳐주는 작업 (1 + 2)
+        alert.addAction(copy)
+        alert.addAction(web)
+        alert.addAction(cancel)
+        alert.addAction(ok)
+        
+        // 4. 띄워주기
+        present(alert, animated: true, completion: nil)
+    }
 
 }
 
