@@ -26,10 +26,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        for i in labelList {
+        for label in labelList {
             // 텍스트 가운데 정렬
-            i.textAlignment = .center
-            i.text = labelText[idx] + " \(cnt)"
+            label.textAlignment = .center
+            label.text = labelText[idx] + " \(cnt)"
             idx += 1
         }
         
@@ -65,9 +65,12 @@ class ViewController: UIViewController {
     
     @IBAction func buttonClicked(_ sender: UIButton) {
         // showAlertController()
+        
+        // 클릭했을 때 cntDic 카운트 관리하는 변수에 값 업데이트
         cntDic[labelText[sender.tag]]! += 1
         
-        
+        // 클릭했을 때 딕셔너리 값을 레이블에 반영하는 것 생각해보기
+        labelList[sender.tag].text = labelText[sender.tag] + " \(cntDic[labelText[sender.tag]]!)"
     }
     
     func showAlertController() {
