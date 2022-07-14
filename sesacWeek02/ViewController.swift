@@ -18,8 +18,8 @@ class ViewController: UIViewController {
     var idx = 0
     var cnt = 0
     var cntDic : [String:Int] = ["행복해" : 0, "사랑해" : 0, "좋아해" : 0, "당황해" : 0, "속상해" : 0, "우울해" : 0, "심심해" : 0, "시무룩해" : 0, "궁금해" : 0]
-    var labelText : [String] = ["행복해", "사랑해", "좋아해", "당황해", "속상해", "우울해", "심심해", "시무룩해", "궁금해"]
-    
+    // 그냥 var로 선언하면 할당하는 순서가 꼬여서 발생한 문제? lazy키워드를 통해 다 할당하고나서 data에 최초 접근시 할당하도록 ? - 좀더 찾아보기
+    lazy var labelText = Array(cntDic.keys)
     
     
     
