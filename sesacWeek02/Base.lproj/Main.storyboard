@@ -674,16 +674,46 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2l9-TL-cOo">
+                                <rect key="frame" x="96" y="711" width="56" height="31"/>
+                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="GgI-wI-Ufx"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <connections>
+                                    <action selector="saveButtonClicked:" destination="olf-At-lkE" eventType="touchUpInside" id="UZg-Jf-e95"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ld-my-PuC">
+                                <rect key="frame" x="262" y="711" width="56" height="31"/>
+                                <color key="backgroundColor" red="0.76021719099999996" green="0.22036437580000001" blue="0.69902241970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="hf0-2R-Yhx"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="clear"/>
+                                <connections>
+                                    <action selector="clearButtonClicked:" destination="olf-At-lkE" eventType="touchUpInside" id="0q5-L7-flm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wG0-Bo-Nmr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="2l9-TL-cOo" firstAttribute="top" secondItem="URZ-QA-Qmj" secondAttribute="bottom" constant="76.5" id="0FI-4B-4M9"/>
                             <constraint firstItem="URZ-QA-Qmj" firstAttribute="centerX" secondItem="eNb-EX-hlJ" secondAttribute="centerX" id="595-qE-YdS"/>
+                            <constraint firstItem="wG0-Bo-Nmr" firstAttribute="bottom" secondItem="3Ld-my-PuC" secondAttribute="bottom" constant="71" id="72n-az-qRI"/>
+                            <constraint firstItem="wG0-Bo-Nmr" firstAttribute="bottom" secondItem="2l9-TL-cOo" secondAttribute="bottom" constant="71" id="8nq-zF-Obs"/>
+                            <constraint firstItem="2l9-TL-cOo" firstAttribute="leading" secondItem="wG0-Bo-Nmr" secondAttribute="leading" constant="96" id="9Yv-dg-a8Q"/>
                             <constraint firstItem="UkX-Of-EWW" firstAttribute="trailing" secondItem="wG0-Bo-Nmr" secondAttribute="trailing" id="CJd-hP-GvY"/>
+                            <constraint firstItem="wG0-Bo-Nmr" firstAttribute="trailing" secondItem="3Ld-my-PuC" secondAttribute="trailing" constant="96" id="S8z-gY-yM0"/>
                             <constraint firstItem="UkX-Of-EWW" firstAttribute="top" secondItem="wG0-Bo-Nmr" secondAttribute="top" id="TMo-Sz-w7L"/>
                             <constraint firstItem="URZ-QA-Qmj" firstAttribute="centerY" secondItem="eNb-EX-hlJ" secondAttribute="centerY" id="Xcx-iK-bRb"/>
                             <constraint firstItem="URZ-QA-Qmj" firstAttribute="width" secondItem="wG0-Bo-Nmr" secondAttribute="width" multiplier="0.9" id="hQE-FT-M81"/>
                             <constraint firstItem="UkX-Of-EWW" firstAttribute="leading" secondItem="wG0-Bo-Nmr" secondAttribute="leading" id="j38-9L-c0g"/>
+                            <constraint firstItem="3Ld-my-PuC" firstAttribute="top" secondItem="URZ-QA-Qmj" secondAttribute="bottom" constant="76.5" id="wHw-GX-K18"/>
                         </constraints>
                     </view>
                     <toolbarItems/>

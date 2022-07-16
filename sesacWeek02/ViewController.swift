@@ -93,6 +93,16 @@ class ViewController: UIViewController {
         // 4. 띄워주기
         present(alert, animated: true, completion: nil)
     }
-
+    @IBAction func saveButtonClicked(_ sender: UIButton) {
+//        UserDefaults.standard.integer(forKey: UserDefaultkey.)
+    }
+    @IBAction func clearButtonClicked(_ sender: UIButton) {
+        
+        for i in 0...8 {
+            cntDic[labelText[i]] = 0 // cntDic value값 0으로 초기화
+            labelList[i].text = labelText[i] + " \(cntDic[labelText[i]]!)" // 초기화된 값 레이블에 띄우기
+        }
+    }
+    
 }
 
